@@ -7,6 +7,7 @@ import Navigation from './routes/navigation/navigation.component';
 import Home from './routes/home/home.component';
 import Resume from './routes/resume/resume.component';
 import Projects from './routes/projects/projects.compnent';
+import Contact from './routes/contact/contact.component';
 
 
 const App = () => {
@@ -20,6 +21,7 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="resume" element={<Resume />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>
     </>

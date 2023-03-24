@@ -19,10 +19,10 @@ const Menu = ({ open, setOpen }) => {
         <span role="img" aria-label="projects">&#x1F4BB;</span>
         Projects
         </Link>
-      <a href="/">
+      <Link to='/contact' onClick={() => setOpen(!open)}>
         <span role="img" aria-label="contact">&#x1f4e9;</span>
         Contact
-        </a>
+        </Link>
     </StyledMenu>
   )
 }

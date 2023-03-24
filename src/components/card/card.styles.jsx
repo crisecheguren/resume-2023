@@ -55,7 +55,7 @@ export const StyledCard = styled.div`
 
     &:hover {
         border: 2px solid ${({ theme }) => theme.primaryDark};
-        transform: scale(1.05);
+        transform: scale(1.02);
     }
 
     @media only screen and (max-width: 1170px) {
