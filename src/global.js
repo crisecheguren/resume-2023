@@ -12,7 +12,7 @@ export const GlobalStyle = createGlobalStyle`
         align-items: center;
         background-color: ${({ theme }) => theme.primaryLight};
         color: ${({ theme }) => theme.primaryDark};
-        display: flex;
+        
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 16px;
         justify-content: center;

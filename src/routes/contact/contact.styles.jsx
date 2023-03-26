@@ -1,5 +1,11 @@
 import styled from "styled-components";
 
+export const StyledContainer = styled.div`
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+`;
+
 export const StyledHeader = styled.h1`
     font-size: 8em;
     font-weight: 700;
@@ -14,4 +20,37 @@ export const StyledHeader = styled.h1`
     @media only screen and (max-width: 1170px) {
         font-size: 2rem;
     }
+`;
+
+export const ContactWrapper = styled.div`
+    display: flex;
+    gap: 5rem;
+    margin-top: 7rem;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    max-width: 1300px;
+
+    ::after {
+        position: absolute;
+        content: "";
+        width: 2px;
+        height: 50%;
+        background-color: ${({ theme }) => theme.primaryDark};
+        left: 50%;
+        top: 30%;
+        transform: translate(-50%, -50%);
+    }
+
+    .left {
+        width: 100%;
+        max-width: 650px;
+    }
+
+    .right {
+        width: 100%;
+        max-width: 650px;
+    }
+
+
 `;
