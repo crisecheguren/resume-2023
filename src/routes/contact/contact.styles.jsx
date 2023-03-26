@@ -38,19 +38,38 @@ export const ContactWrapper = styled.div`
         height: 50%;
         background-color: ${({ theme }) => theme.primaryDark};
         left: 50%;
-        top: 30%;
+        top: 40%;
         transform: translate(-50%, -50%);
+
     }
 
     .left {
         width: 100%;
         max-width: 650px;
+        margin-top: 3%;
     }
 
     .right {
         width: 100%;
         max-width: 650px;
     }
+    @media only screen and (max-width: 1170px) {
+        padding: 1rem;
+        margin: 1rem;
+    }
+    @media only screen and (max-width: 768px) {
+        
+        flex-direction: column;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
 
+        ::after {
+            display: none;
+        }
+
+        .right {
+            padding: 3rem 1rem 1rem 1rem;
+    }
 
 `;
