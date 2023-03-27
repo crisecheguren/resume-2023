@@ -47,15 +47,16 @@ export const ContactWrapper = styled.div`
         width: 100%;
         max-width: 650px;
         margin-top: 3%;
+        padding: 1rem;
     }
 
     .right {
         width: 100%;
         max-width: 650px;
+        padding: 1rem;
     }
     @media only screen and (max-width: 1170px) {
-        padding: 1rem;
-        margin: 1rem;
+
     }
     @media only screen and (max-width: 768px) {
         
@@ -70,6 +71,6 @@ export const ContactWrapper = styled.div`
 
         .right {
             padding: 3rem 1rem 1rem 1rem;
+        }
     }
-
 `;
