@@ -11,7 +11,7 @@ export const StyledGroup = styled.div`
 
 
     position: relative;
-    margin: 45px 0;
+    margin: 35px 0;
     .form-text-area {
         background: none;
         background-color: white;

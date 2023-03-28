@@ -1,6 +1,7 @@
 import { MdEmail, MdLocalPhone } from "react-icons/md";
 import ContactForm from "../../components/contact-form/contact-form.component";
 import ContactItem from "../../components/contact-item/contact-item.component";
+import Map from "../../components/map/map.component";
 import { ContactWrapper, StyledContainer, StyledHeader } from "./contact.styles";
 
 const Contact = () => {
@@ -24,7 +25,8 @@ const Contact = () => {
                     <div className="right">
                         <ContactForm/>
                     </div>
-            </ContactWrapper>
+                </ContactWrapper>
+            <Map />
         </StyledContainer>
     );
 };
