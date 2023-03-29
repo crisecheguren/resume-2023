@@ -4,11 +4,9 @@ const Map = () => {
     return (
         <div>
             <div className='mapContainer'>
-                <div className='mapCard'>
-                    <h3 className='mapCardHeader'>Coogins</h3>
-                    <p className='mapCardText'>Gainesville, FL</p>
-                    <Link to={'https://www.google.com/maps/place/Deer+Run,+Gainesville,+FL+32653/@29.7105424,-82.3979759,15z/data=!3m1!4b1!4m6!3m5!1s0x88e8bad796d6bbe3:0xabdb531efd5dcd2e!8m2!3d29.713903!4d-82.3980661!16s%2Fg%2F11bvtdz1bj'} target="_blank" rel="noreferrer" className='mapCardLink'>Open in Google Maps</Link>
-                </div>
+                
+            <iframe title="map of Gainesville" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d55458.490852542716!2d-82.35485113435894!3d29.686265872903995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88e6202169bf2c2b%3A0x80e7795d28108d96!2sGainesville%2C%20FL!5e0!3m2!1sen!2sus!4v1679977242286!5m2!1sen!2sus" width="100%" height="600" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                
             </div>
         </div>
 
