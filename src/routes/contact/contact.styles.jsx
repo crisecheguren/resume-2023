@@ -4,6 +4,37 @@ export const StyledContainer = styled.div`
     max-width: 1300px;
     width: 100%;
     margin: auto;
+    
+    
+    .socialWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+    }
+    
+    
+    .socialMediaBtn {
+        margin-top: 1.5rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        width: 75px;
+        height: 40px;
+        color: ${({ theme }) => theme.primaryDark};
+        background-color: transparent;
+        border: none;
+        border-radius: 15px;
+        cursor: pointer;
+
+        &:hover {
+        background-color: ${({ theme }) => theme.primaryDark};
+        color: ${({ theme }) => theme.primaryLight};
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        
+        }
+
+    }
+
 `;
 
 export const StyledHeader = styled.h1`

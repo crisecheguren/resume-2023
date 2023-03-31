@@ -1,11 +1,13 @@
 import { MdEmail, MdLocalPhone } from "react-icons/md";
+import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import ContactForm from "../../components/contact-form/contact-form.component";
 import ContactItem from "../../components/contact-item/contact-item.component";
-import Map from "../../components/map/map.component";
 import { ContactWrapper, StyledContainer, StyledHeader } from "./contact.styles";
 
 const Contact = () => {
     return (
+
         <StyledContainer>
             <StyledHeader>contact</StyledHeader>
                 <ContactWrapper>
@@ -26,8 +28,20 @@ const Contact = () => {
                         <ContactForm/>
                     </div>
                 </ContactWrapper>
-            <Map />
+                <div className="socialWrapper">
+                    <Link to="https://github.com/crisecheguren" target='_blank'>
+                        <FaGithub className='socialMediaBtn'/>
+                    </Link>
+                    <Link to="https://www.linkedin.com/in/crisecheguren/" target="_blank">
+                        <FaLinkedin className='socialMediaBtn'/>
+                    </Link>
+                    <Link to="https://www.youtube.com/channel/UCbM9B6NScahVeBjXBVe2ZIQ" target="_blank">
+                        <FaYoutube className='socialMediaBtn'/>
+                    </Link>
+                </div>    
         </StyledContainer>
+        
+
     );
 };
 

@@ -1,21 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import FormInput from '../form-input/form-input.component';
 import FormTextArea from '../form-text-area/form-text-area.component';
 import { StyledForm } from './contact-form.styles';
+import emailjs from '@emailjs/browser';
 
 
 const defaultFormValues = {
-    displayName: '',
-    email: '',
+    from_name: '',
+    from_email: '',
     message: '',
 };
 
-
-
-
 const ContactForm = () => {
+    const form = useRef();
     const [formValues, setFormValues] = useState(defaultFormValues);
-    const { displayName, email, message } = formValues;
+    const [submissionStatus, setSubmissionStatus] = useState('idle');
+    const { from_name, from_email, message } = formValues;
+    
 
     const handleChange = (e) => {
         const { name, value } = e.target;
@@ -24,16 +25,51 @@ const ContactForm = () => {
 
 
 
+    
+    
+    const sendEmail = (e) => {
+        e.preventDefault();
+        setSubmissionStatus('sending');
+        emailjs.sendForm('service_y5g37gj', 'template_xl6drmj', form.current, 'VHb-0u_SOqF9x3T9a')
+          .then((result) => {
+              console.log(result.text);
+              setSubmissionStatus('success');
+          }, (error) => {
+              console.log(error.text);
+              setSubmissionStatus('error');
+          });
+
+          form.current.reset();
+          setFormValues(defaultFormValues);
+      };
+
+    
+      const renderSubmissionMessage = () => {
+        switch (submissionStatus) {
+            case 'sending':
+                return <p>Sending...</p>;
+            case 'success':
+                return <p>Your message was successfully sent!</p>;
+            case 'error':
+                return <p>There was an error sending your message. Please try again.</p>;
+            default:
+                return null;
+        }
+    };
+      
+
+
     return (
         <div>
-            <StyledForm>
+            <StyledForm ref={form} onSubmit={sendEmail}>
                 <div>
-                <FormInput type="text" name="displayName" label="Your Name" onChange={handleChange} value={displayName} required/>
-                <FormInput type="text" name="email" label="Your Email" onChange={handleChange} value={email} required/>
+                <FormInput type="text" name="from_name" label="Your Name" onChange={handleChange} value={from_name} required/>
+                <FormInput type="text" name="from_email" label="Your Email" onChange={handleChange} value={from_email} required/>
                 <FormTextArea type="text" name="message" label="Your Message" onChange={handleChange} value={message} required/>
                 </div> 
                 <button type='submit'>Send</button>         
             </StyledForm>
+            {renderSubmissionMessage()}
         </div>
     );
 };
