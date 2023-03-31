@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import ContactForm from "../../components/contact-form/contact-form.component";
 import ContactItem from "../../components/contact-item/contact-item.component";
-import { ContactWrapper, StyledContainer, StyledHeader } from "./contact.styles";
+import { ContactWrapper, StyledContainer, StyledHeader, StyledLink } from "./contact.styles";
 
 const Contact = () => {
     return (
@@ -12,17 +12,24 @@ const Contact = () => {
             <StyledHeader>contact</StyledHeader>
                 <ContactWrapper>
                     <div className="left">
-                        <ContactItem 
-                            icon={<MdLocalPhone/>}
-                            text="954-647-8339"
-                        />
-                        <ContactItem
-                            icon={<MdEmail/>}
-                            text="cris.echeguren@gmail.com"    
-                        />
-                        <ContactItem 
-                            text="Gainesville, FL"
-                        />
+                        
+                        <StyledLink to="tel:9546478339" target="_blank">
+                            <ContactItem
+                                icon={<MdLocalPhone/>}
+                                text="954-647-8339"
+                            />
+                        </StyledLink>
+                        <StyledLink to="mailto:cris.echeguren@gmail.com" target="_blank">
+                            <ContactItem
+                                icon={<MdEmail/>}
+                                text="cris.echeguren@gmail.com"
+                            />
+                        </StyledLink>
+                        <StyledLink to="https://goo.gl/maps/YeSU9w2nUpsBee2w5" target="_blank">
+                            <ContactItem
+                                text="Gainesville, FL"
+                            />
+                        </StyledLink>
                     </div>
                     <div className="right">
                         <ContactForm/>

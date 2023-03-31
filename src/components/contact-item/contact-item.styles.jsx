@@ -8,6 +8,7 @@ export const ItemStyles = styled.div`
     gap: 2rem;
     border-radius: 8px;
     margin-bottom: 2rem;
+   
     .icon {
         color: ${({ theme }) => theme.primaryDark};
         background-color: ${({ theme }) => theme.secondaryDark};

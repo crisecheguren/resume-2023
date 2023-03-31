@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const StyledContainer = styled.div`
     max-width: 1300px;
@@ -79,6 +80,7 @@ export const ContactWrapper = styled.div`
         max-width: 650px;
         margin-top: 3%;
         padding: 1rem;
+        
     }
 
     .right {
@@ -104,4 +106,10 @@ export const ContactWrapper = styled.div`
             padding: 3rem 1rem 1rem 1rem;
         }
     }
+`;
+
+export const StyledLink = styled(Link)`
+    text-decoration: none;
+    color: ${({ theme }) => theme.primaryDark};
+    font-weight: 400;
 `;
