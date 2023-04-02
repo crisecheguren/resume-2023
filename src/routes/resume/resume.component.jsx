@@ -15,7 +15,7 @@ const Resume = () => {
                 
                 return (
                     <VerticalTimelineElement
-                        key={job.key}
+                        key={job.id}
                         date={job.date}
                         dateClassName="date"
                         iconStyle={{ background: '#fff' }}
