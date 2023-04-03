@@ -6,7 +6,7 @@ function TypedComponent({ strings, idName, loop, cursor }) {
 
     const options = {
     strings: strings,
-    typeSpeed: 50,
+    typeSpeed: 75,
     backSpeed: 50,
     loop: loop,
     showCursor: cursor,

@@ -7,6 +7,7 @@ import Navigation from './routes/navigation/navigation.component';
 import Home from './routes/home/home.component';
 import Resume from './routes/resume/resume.component';
 import Projects from './routes/projects/projects.compnent';
+import AboutMe from './routes/about-me/about-me.component';
 import Contact from './routes/contact/contact.component';
 
 
@@ -21,6 +22,7 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path="resume" element={<Resume />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="about" element={<AboutMe />} />
           <Route path="contact" element={<Contact />} />
         </Route>
       </Routes>

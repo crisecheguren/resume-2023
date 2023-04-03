@@ -19,6 +19,10 @@ const Menu = ({ open, setOpen }) => {
         <span role="img" aria-label="projects">&#x1F4BB;</span>
         Projects
         </Link>
+      <Link to='/about' onClick={() => setOpen(!open)}>
+        <span role="img" aria-label="about-me">&#x1F44B;</span>
+        About Me
+        </Link>
       <Link to='/contact' onClick={() => setOpen(!open)}>
         <span role="img" aria-label="contact">&#x1f4e9;</span>
         Contact

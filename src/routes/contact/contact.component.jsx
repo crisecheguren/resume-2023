@@ -12,7 +12,6 @@ const Contact = () => {
             <StyledHeader>contact</StyledHeader>
                 <ContactWrapper>
                     <div className="left">
-                        
                         <StyledLink to="tel:9546478339" target="_blank">
                             <ContactItem
                                 icon={<MdLocalPhone/>}
