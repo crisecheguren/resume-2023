@@ -4,15 +4,16 @@ import pip from '../images/pip.png'
 import joke from '../images/joke.png'
 import lightDark from '../images/lightDark.png'
 import monsters from '../images/monsters.png'
+import clothing from '../images/clothing.png'
 
 const projects = [
     {
         id: 1,
-        name: 'Quote Generator',
-        img: quote,
-        projectLink: "https://crisecheguren.github.io/quote-generator",
-        sourceLink: "https://github.com/crisecheguren/quote-generator",
-        description: 'This inspirational quote generator was made mostly using CSS and vanilla JS.  I am fetching a big JSON object filled with quotes and storing them in an array.  Then I use Math.random to find a quote and display it.  I also provide a way for you to tweet the quote!'
+        name: 'Dingos Clothing',
+        img: clothing,
+        projectLink: "https://crisecheguren.github.io/dingos-clothing/",
+        sourceLink: "https://github.com/crisecheguren/dingos-clothing",
+        description: 'This is big e-commerce clothing store project that I made using React, Redux, Firebase, and Stripe.  I learned a lot about how to use Redux and how to use Firebase to store user data and also how to use Stripe to process payments.'
     },
     {
         id: 2,
@@ -24,6 +25,14 @@ const projects = [
     },
     {
         id: 3,
+        name: 'Quote Generator',
+        img: quote,
+        projectLink: "https://crisecheguren.github.io/quote-generator",
+        sourceLink: "https://github.com/crisecheguren/quote-generator",
+        description: 'This inspirational quote generator was made mostly using CSS and vanilla JS.  I am fetching a big JSON object filled with quotes and storing them in an array.  Then I use Math.random to find a quote and display it.  I also provide a way for you to tweet the quote!'
+    },
+    {
+        id: 4,
         name: 'Picture in Picture',
         img: pip,
         projectLink: "https://crisecheguren.github.io/picture-in-picture/",
@@ -31,7 +40,7 @@ const projects = [
         description: 'This is a fun picture-in-picture project.  When the page loads, the user is prompted to select a screen or media to share. When you press the start button, it initates picture-in-picture mode.'
     },
     {
-        id: 4,
+        id: 5,
         name: 'Joke Teller',
         img: joke,
         projectLink: "https://crisecheguren.github.io/joke-teller/",
@@ -39,7 +48,7 @@ const projects = [
         description: 'This project showcased the VoiceRSS API (text-to-speech) and the JokeAPI.  I fetched a joke and played it through an audio element triggered by a button.'
     },
     {
-        id: 5,
+        id: 6,
         name: 'Light/Dark Mode',
         img: lightDark,
         projectLink: "https://crisecheguren.github.io/light-dark-theme/",
@@ -47,13 +56,15 @@ const projects = [
         description: 'This light/dark mode project was made using vanilla JS and CSS.  I learned a lot about how to manipulate the root theme and also how to use localStorage to make sure I remember which theme a user picks.'
     },
     {
-        id: 6,
+        id: 7,
         name: 'Monsters Rolodex',
         img: monsters,
         projectLink: "https://crisecheguren.github.io/monsters-rolodex/",
         sourceLink: "https://github.com/crisecheguren/monsters-rolodex/",
         description: 'This is a super simple project that uses vanilla react to fetch some monsters from an API and display them on the page.  I also added a search bar to filter the monsters by name.'
-    }
+    },
+    
+
 ]
 
 export default projects;

@@ -31,9 +31,7 @@ export const StyledGroup = styled.div`
             ${shrinkLabel}
         }
     }
-    input[type='password'] {
-        letter-spacing: 0.3em;
-    }
+
     .form-input-label {
         color: ${({ theme }) => theme.primaryDark};
         font-size: 16px;
