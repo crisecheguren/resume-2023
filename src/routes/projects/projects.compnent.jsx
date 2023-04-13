@@ -2,9 +2,9 @@ import CardList from "../../components/card-list/card-list.component";
 import projects from "../../data/projects";
 import { StyledContainer, StyledHeader, StyledProjects } from "./projects.styles";
 
-const Projects = () => {
+const Projects = ({onClick}) => {
     return (
-        <StyledContainer>
+        <StyledContainer onClick={onClick}>
             <StyledHeader>Projects</StyledHeader>
             <StyledProjects>
                 <CardList projects={projects}/>

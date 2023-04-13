@@ -1,14 +1,14 @@
 import { MdEmail, MdLocalPhone } from "react-icons/md";
-import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
+import socialMediaLinks from '../../data/social'
 import ContactForm from "../../components/contact-form/contact-form.component";
 import ContactItem from "../../components/contact-item/contact-item.component";
 import SocialIcon from "../../components/social-icon/social-icon.component";
 import { ContactWrapper, StyledContainer, StyledHeader, StyledLink } from "./contact.styles";
 
-const Contact = () => {
+const Contact = ({onClick}) => {
     return (
 
-        <StyledContainer>
+        <StyledContainer onClick={onClick}>
             <StyledHeader>contact</StyledHeader>
                 <ContactWrapper>
                     <div className="left">
@@ -35,9 +35,9 @@ const Contact = () => {
                     </div>
                 </ContactWrapper>
                 <div className="socialWrapper">
-                    <SocialIcon Icon={FaGithub} url="https://github.com/crisecheguren" className="socialMediaBtn" />
-                    <SocialIcon Icon={FaLinkedin} url="https://www.linkedin.com/in/crisecheguren/" className="socialMediaBtn" />
-                    <SocialIcon Icon={FaYoutube} url="https://www.youtube.com/channel/UCbM9B6NScahVeBjXBVe2ZIQ" className="socialMediaBtn" />
+                    {socialMediaLinks.map((link, index) => (
+                        <SocialIcon key={index} Icon={link.Icon} url={link.url} className="socialMediaBtn" />
+                ))}
                 </div>    
         </StyledContainer>
         

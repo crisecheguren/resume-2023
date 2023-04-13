@@ -1,11 +1,11 @@
 import { AboutWrapper, StyledContainer, StyledHeader } from "./about-me.styles";
-import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
 import Image from "../../assets/PXL_20230402_154551933.jpg";
 import SocialIcon from "../../components/social-icon/social-icon.component";
+import socialMediaLinks from '../../data/social'
 
-const AboutMe = () => {
+const AboutMe = ({onClick}) => {
     return (
-        <StyledContainer>
+        <StyledContainer onClick={onClick}>
             <StyledHeader>About Me</StyledHeader>
             <AboutWrapper>
                 <div className="left">
@@ -27,9 +27,9 @@ const AboutMe = () => {
                 </div>
             </AboutWrapper>
             <div className="socialWrapper">
-                <SocialIcon Icon={FaGithub} url="https://github.com/crisecheguren" className="socialMediaBtn" />
-                <SocialIcon Icon={FaLinkedin} url="https://www.linkedin.com/in/crisecheguren/" className="socialMediaBtn" />
-                <SocialIcon Icon={FaYoutube} url="https://www.youtube.com/channel/UCbM9B6NScahVeBjXBVe2ZIQ" className="socialMediaBtn" />
+                {socialMediaLinks.map((link, index) => (
+                    <SocialIcon key={index} Icon={link.Icon} url={link.url} className="socialMediaBtn" />
+                ))}
             </div>
         </StyledContainer>
     );

@@ -13,17 +13,22 @@ import Contact from './routes/contact/contact.component';
 
 const App = () => {
 
+  const handleClick = (e) => {
+    e.stopPropagation();
+    document.dispatchEvent(new MouseEvent('mousedown'));
+  };
+
   return (
     <ThemeProvider theme={theme}>
       <>
         <GlobalStyle />
         <Routes>
           <Route path="/" element={<Navigation />}>
-          <Route index element={<Home />} />
-          <Route path="resume" element={<Resume />} />
-          <Route path="projects" element={<Projects />} />
-          <Route path="about" element={<AboutMe />} />
-          <Route path="contact" element={<Contact />} />
+          <Route index element={<Home onClick={handleClick} />} />
+          <Route path="resume" element={<Resume onClick={handleClick} />} />
+          <Route path="projects" element={<Projects onClick={handleClick} />} />
+          <Route path="about" element={<AboutMe onClick={handleClick} />} />
+          <Route path="contact" element={<Contact onClick={handleClick} />} />
         </Route>
       </Routes>
     </>

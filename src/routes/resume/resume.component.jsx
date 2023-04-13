@@ -5,29 +5,29 @@ import { StyledH3, StyledHeader, StyledParagraph } from './resume.styles';
 
 
 
-const Resume = () => {
+const Resume = ({ onClick }) => {
 
     return (
-        <div>
-        <StyledHeader>Resume</StyledHeader>
-        <VerticalTimeline>
-            {jobs.map((job) => {
-                
-                return (
-                    <VerticalTimelineElement
-                        key={job.id}
-                        date={job.date}
-                        dateClassName="date"
-                        iconStyle={{ background: '#fff' }}
-                        icon={job.icon}
-                    >
-                    <StyledH3 className="vertical-timeline-element-title">{job.title}</StyledH3>
-                    <h5 className="vertical-timeline-element-subtitle">{job.company}</h5>
-                    <StyledParagraph>{job.description}</StyledParagraph>
-                    </VerticalTimelineElement>
-                );})
-            }
-        </VerticalTimeline>
+        <div onClick={onClick}>
+            <StyledHeader>Resume</StyledHeader>
+            <VerticalTimeline>
+                {jobs.map((job) => {
+                    
+                    return (
+                        <VerticalTimelineElement
+                            key={job.id}
+                            date={job.date}
+                            dateClassName="date"
+                            iconStyle={{ background: '#fff' }}
+                            icon={job.icon}
+                        >
+                        <StyledH3 className="vertical-timeline-element-title">{job.title}</StyledH3>
+                        <h5 className="vertical-timeline-element-subtitle">{job.company}</h5>
+                        <StyledParagraph>{job.description}</StyledParagraph>
+                        </VerticalTimelineElement>
+                    );})
+                }
+            </VerticalTimeline>
         </div>
     );
     }
