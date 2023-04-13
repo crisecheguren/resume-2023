@@ -13,7 +13,7 @@ const projects = [
         img: clothing,
         projectLink: "https://crisecheguren.github.io/dingos-clothing/",
         sourceLink: "https://github.com/crisecheguren/dingos-clothing",
-        description: 'This is big e-commerce clothing store project that I made using React, Redux, Firebase, and Stripe.  I learned a lot about how to use Redux and how to use Firebase to store user data and also how to use Stripe to process payments.'
+        description: "This is big e-commerce clothing store project that I made using React and Firebase.  I learned a lot about how to use Firebase to store user data. I'm currently converting this project to use Redux and the Stripe API to process payments."
     },
     {
         id: 2,
