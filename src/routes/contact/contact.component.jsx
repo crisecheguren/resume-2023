@@ -1,8 +1,8 @@
 import { MdEmail, MdLocalPhone } from "react-icons/md";
 import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
-import { Link } from "react-router-dom";
 import ContactForm from "../../components/contact-form/contact-form.component";
 import ContactItem from "../../components/contact-item/contact-item.component";
+import SocialIcon from "../../components/social-icon/social-icon.component";
 import { ContactWrapper, StyledContainer, StyledHeader, StyledLink } from "./contact.styles";
 
 const Contact = () => {
@@ -35,15 +35,9 @@ const Contact = () => {
                     </div>
                 </ContactWrapper>
                 <div className="socialWrapper">
-                    <Link to="https://github.com/crisecheguren" target='_blank'>
-                        <FaGithub className='socialMediaBtn'/>
-                    </Link>
-                    <Link to="https://www.linkedin.com/in/crisecheguren/" target="_blank">
-                        <FaLinkedin className='socialMediaBtn'/>
-                    </Link>
-                    <Link to="https://www.youtube.com/channel/UCbM9B6NScahVeBjXBVe2ZIQ" target="_blank">
-                        <FaYoutube className='socialMediaBtn'/>
-                    </Link>
+                    <SocialIcon Icon={FaGithub} url="https://github.com/crisecheguren" className="socialMediaBtn" />
+                    <SocialIcon Icon={FaLinkedin} url="https://www.linkedin.com/in/crisecheguren/" className="socialMediaBtn" />
+                    <SocialIcon Icon={FaYoutube} url="https://www.youtube.com/channel/UCbM9B6NScahVeBjXBVe2ZIQ" className="socialMediaBtn" />
                 </div>    
         </StyledContainer>
         

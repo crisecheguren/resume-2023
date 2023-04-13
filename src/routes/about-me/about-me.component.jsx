@@ -1,7 +1,7 @@
 import { AboutWrapper, StyledContainer, StyledHeader } from "./about-me.styles";
-import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin, FaYoutube } from "react-icons/fa";
 import Image from "../../assets/PXL_20230402_154551933.jpg";
+import SocialIcon from "../../components/social-icon/social-icon.component";
 
 const AboutMe = () => {
     return (
@@ -27,16 +27,10 @@ const AboutMe = () => {
                 </div>
             </AboutWrapper>
             <div className="socialWrapper">
-                    <Link to="https://github.com/crisecheguren" target='_blank'>
-                        <FaGithub className='socialMediaBtn'/>
-                    </Link>
-                    <Link to="https://www.linkedin.com/in/crisecheguren/" target="_blank">
-                        <FaLinkedin className='socialMediaBtn'/>
-                    </Link>
-                    <Link to="https://www.youtube.com/channel/UCbM9B6NScahVeBjXBVe2ZIQ" target="_blank">
-                        <FaYoutube className='socialMediaBtn'/>
-                    </Link>
-                </div>
+                <SocialIcon Icon={FaGithub} url="https://github.com/crisecheguren" className="socialMediaBtn" />
+                <SocialIcon Icon={FaLinkedin} url="https://www.linkedin.com/in/crisecheguren/" className="socialMediaBtn" />
+                <SocialIcon Icon={FaYoutube} url="https://www.youtube.com/channel/UCbM9B6NScahVeBjXBVe2ZIQ" className="socialMediaBtn" />
+            </div>
         </StyledContainer>
     );
 };
