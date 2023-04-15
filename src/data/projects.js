@@ -5,6 +5,7 @@ import joke from '../images/joke.png'
 import lightDark from '../images/lightDark.png'
 import monsters from '../images/monsters.png'
 import clothing from '../images/clothing.png'
+import animatedLP from '../images/animatedLP.png'
 
 const projects = [
     {
@@ -63,7 +64,14 @@ const projects = [
         sourceLink: "https://github.com/crisecheguren/monsters-rolodex/",
         description: 'This is a super simple project that uses vanilla react to fetch some monsters from an API and display them on the page.  I also added a search bar to filter the monsters by name.'
     },
-    
+    {
+        id: 8,
+        name: 'Animated Landing Page',
+        img: animatedLP,
+        projectLink: "https://crisecheguren.github.io/animated-landing-page/",
+        sourceLink: "https://github.com/crisecheguren/animated-landing-page/",
+        description: 'This is a super simple project I made to learn how to use the Animate on Scroll library.  I took a template provided by Creative Tim and added some animations to it.'
+    },
 
 ]
 

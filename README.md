@@ -5,7 +5,7 @@ This project is a simple, yet powerful resume builder created using the popular 
 * Intuitive and easy-to-use interface
 * Responsive design for mobile and desktop
 * Customizable sections and layout
-* Save and load resume data in JSON format
+* Save and load resume and biography data in JSON format
 
 ## Available Scripts
 
