@@ -6,6 +6,7 @@ import lightDark from '../images/lightDark.png'
 import monsters from '../images/monsters.png'
 import clothing from '../images/clothing.png'
 import animatedLP from '../images/animatedLP.png'
+import animatedNav from '../images/animated-css-navigation.png'
 
 const projects = [
     {
@@ -71,6 +72,14 @@ const projects = [
         projectLink: "https://crisecheguren.github.io/animated-landing-page/",
         sourceLink: "https://github.com/crisecheguren/animated-landing-page/",
         description: 'This is a super simple project I made to learn how to use the Animate on Scroll library.  I took a template provided by Creative Tim and added some animations to it.'
+    },
+    {
+        id: 9,
+        name: 'Animated Navigation Menu',
+        img: animatedNav,
+        projectLink: "https://crisecheguren.github.io/animated-navigation/",
+        sourceLink: "https://github.com/crisecheguren/animated-navigation/",
+        description: 'This is an animated navigation menu I made using CSS and Vanilla JS. I learned a lot about how to use CSS animations and how to target different elements in the DOM using JS.'
     },
 
 ]
