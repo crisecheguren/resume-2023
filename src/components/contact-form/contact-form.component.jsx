@@ -63,9 +63,9 @@ const ContactForm = () => {
         <div>
             <StyledForm ref={form} onSubmit={sendEmail}>
                 <div>
-                <FormInput type="text" name="from_name" label="Your Name" onChange={handleChange} value={from_name} required/>
-                <FormInput type="text" name="from_email" label="Your Email" onChange={handleChange} value={from_email} required/>
-                <FormTextArea type="text" name="message" label="Your Message" onChange={handleChange} value={message} required/>
+                <FormInput type="text" name="from_name" label="Name" onChange={handleChange} value={from_name} required/>
+                <FormInput type="text" name="from_email" label="Email" onChange={handleChange} value={from_email} required/>
+                <FormTextArea type="text" name="message" label="Type a message..." onChange={handleChange} value={message} required/>
                 </div> 
                 <button type='submit'>Send</button>         
             </StyledForm>
