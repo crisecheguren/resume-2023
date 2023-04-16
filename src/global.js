@@ -10,7 +10,6 @@ export const GlobalStyle = createGlobalStyle`
     }
     body {
         align-items: center;
-        background-color: ${({ theme }) => theme.primaryLight};
         color: ${({ theme }) => theme.primaryDark};
         
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;

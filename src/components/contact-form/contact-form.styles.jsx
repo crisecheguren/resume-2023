@@ -11,19 +11,19 @@ export const StyledForm = styled.form`
         border: none;
         outline: none;
         background: ${({ theme }) => theme.primaryDark};
-        color: ${({ theme }) => theme.primaryLight};
+        color: #C8C8D0;
         border-radius: 0.5rem;
-        max-width: 120px;
+        text-transform: uppercase;
         width: 100%;
         height: 2rem;
         margin-top: 1rem;
         transition: .3s;
         cursor: pointer;
-        border: 2px solid ${({ theme }) => theme.primaryLight};
+        border: 2px solid #C8C8D0;
     }
 
     button[type="submit"]:hover {
-        background: transparent;
+        background: #C8C8D0;
         color: ${({ theme }) => theme.primaryDark};
         border: 2px solid ${({ theme }) => theme.primaryDark};
     }

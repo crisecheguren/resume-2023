@@ -5,6 +5,8 @@ export const StyledContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
+    background-color: ${({ theme }) => theme.navColor1};
 
     .title {
         font-size: 2rem;
@@ -37,7 +39,7 @@ export const StyledContainer = styled.div`
 
         &:hover {
         background-color: ${({ theme }) => theme.primaryDark};
-        color: ${({ theme }) => theme.primaryLight};
+        color: ${({ theme }) => theme.navColor1};
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         
         }
@@ -55,18 +57,20 @@ export const LogoContainer = styled.div`
     align-items: center;
     justify-content: center;
     padding-top: 10%;
-
+    
 `;
 
 export const StyledLogo = styled(Logo)`
-    width: 40vh;
-    
-    fill: ${({ theme }) => theme.primaryDark};
-    transition: fill 0.3s linear;
-    
-    &:hover {
-        fill: ${({ theme }) => theme.primaryHover};
-    }
+  width: 40vh;
+  border-radius: 10px;
+  fill: ${({ theme }) => theme.primaryDark};
+  transition: fill 0.5s linear, background-color 0.5s linear;
+
+  &:hover {
+    fill: ${({ theme }) => theme.navColor1};
+    background-color: ${({ theme }) => theme.primaryDark};
+  }
+
 
     @media only screen and (max-width: 1170px) {
         width: 40vh;

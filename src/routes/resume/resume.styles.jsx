@@ -1,5 +1,10 @@
 import styled from 'styled-components';
 
+export const StyledContainer = styled.div`
+    background-color: ${({ theme }) => theme.navColor2};
+`;
+
+
 export const StyledHeader = styled.h1`
     font-size: 8em;
     font-weight: 700;
@@ -7,7 +12,7 @@ export const StyledHeader = styled.h1`
     margin: 0;
     padding: 0;
     margin-bottom: 1rem;
-    margin-top: 1rem;
+    padding-top: 1rem;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.5rem;

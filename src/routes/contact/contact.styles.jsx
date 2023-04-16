@@ -1,6 +1,15 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+export const StyledWrapper = styled.div`
+    background-color: ${({ theme }) => theme.navColor5};
+    height: 100vh;
+
+    @media only screen and (max-width: 768px) {
+        height: 100%;
+    }
+`;
+
 export const StyledContainer = styled.div`
     max-width: 1300px;
     width: 100%;
@@ -29,7 +38,7 @@ export const StyledContainer = styled.div`
 
         &:hover {
         background-color: ${({ theme }) => theme.primaryDark};
-        color: ${({ theme }) => theme.primaryLight};
+        color: ${({ theme }) => theme.navColor5};
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         
         }
@@ -45,7 +54,6 @@ export const StyledHeader = styled.h1`
     margin: 0;
     padding: 0;
     margin-bottom: 1rem;
-    margin-top: 1rem;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.5rem;

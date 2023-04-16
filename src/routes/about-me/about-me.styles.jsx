@@ -1,12 +1,22 @@
 import styled from "styled-components";
 
+export const StyledWrapper = styled.div`
+    background-color: ${({ theme }) => theme.navColor3};
+    height: 100vh;
 
+
+    @media only screen and (max-width: 1170px) {
+        height: 100%;
+        padding-bottom: .5rem;
+    }
+`;
 
 export const StyledContainer = styled.div`
     max-width: 1300px;
     width: 100%;
     margin: auto;
-    padding: 1rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
 
     .socialWrapper {
         display: flex;
@@ -30,7 +40,7 @@ export const StyledContainer = styled.div`
 
         &:hover {
         background-color: ${({ theme }) => theme.primaryDark};
-        color: ${({ theme }) => theme.primaryLight};
+        color: ${({ theme }) => theme.navColor3};
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
         
         }
@@ -65,7 +75,7 @@ export const AboutWrapper = styled.div`
         max-width: 650px;
         margin-top: 3%;
         padding: 1rem;
-        background-color: ${({ theme }) => theme.secondaryLight};
+        background-color: #C49AA1;
         border-radius: 8px;
 
         p {
@@ -106,7 +116,7 @@ export const StyledHeader = styled.h1`
     margin: 0;
     padding: 0;
     margin-bottom: 1rem;
-    margin-top: 1rem;
+    padding-top: 1rem;
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.5rem;

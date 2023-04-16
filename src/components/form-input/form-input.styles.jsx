@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const shrinkLabel = `
-    top: -14px; 
+    top: -16px; 
     font-size: 12px; 
     color: ${({ theme }) => theme.primaryDark}; 
 `;
@@ -29,6 +29,7 @@ export const StyledGroup = styled.div`
         }
         &:focus ~ .form-input-label {
             ${shrinkLabel}
+            color: #C8C8D0;
         }
     }
 
@@ -43,6 +44,7 @@ export const StyledGroup = styled.div`
         transition: 300ms ease all;
         &.shrink {
             ${shrinkLabel}
+            color: #C8C8D0;
         }
     }
 `;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ItemStyles = styled.div`
     padding: 1rem;
-    background-color: ${({ theme }) => theme.secondaryLight};
+    background-color: #9E9DAF;
     display: flex;
     align-items: center;
     gap: 2rem;

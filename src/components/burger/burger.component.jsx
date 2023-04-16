@@ -1,20 +1,18 @@
 import React from 'react';
-import { bool, func } from 'prop-types';
 import { StyledBurger } from './burger.styles';
 
-const Burger = ({open, setOpen}) => {
+const Burger = ({ open, setOpen }) => {
+  const toggleNav = () => {
+    setOpen(!open);
+  };
+
   return (
-    <StyledBurger open={open} onClick={() => setOpen(!open)}>
+    <StyledBurger open={open} onClick={toggleNav}>
       <div />
       <div />
       <div />
     </StyledBurger>
-  )
-}
-
-Burger.propTypes = {
-    open: bool.isRequired,
-    setOpen: func.isRequired,
+  );
 };
 
 
