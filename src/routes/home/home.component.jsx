@@ -1,7 +1,6 @@
 import React from 'react';
-import { LogoContainer, SocialIconsContainer, StyledContainer, StyledLogo } from "./home.styles";
+import { LogoContainer, SocialIconsContainer, StyledContainer, StyledLogo, StyledSocialIcon } from "./home.styles";
 import TypedComponent from '../../components/typed/typed.component';
-import SocialIcon from '../../components/social-icon/social-icon.component';
 import socialMediaLinks from '../../data/social'
 
 const Home = ({onClick}) => {
@@ -20,7 +19,7 @@ const Home = ({onClick}) => {
                 </div>
                 <SocialIconsContainer>
                     {socialMediaLinks.map((link, index) => (
-                        <SocialIcon key={index} Icon={link.Icon} url={link.url} className="socialMediaBtn" />
+                        <StyledSocialIcon key={index} Icon={link.Icon} url={link.url} />
                   ))}
                 </SocialIconsContainer>
             </StyledContainer>

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import SocialIcon from "../../components/social-icon/social-icon.component";
 import { ReactComponent as Logo } from '../../assets/logo.svg';
 
 export const StyledContainer = styled.div`
@@ -7,6 +8,7 @@ export const StyledContainer = styled.div`
     align-items: center;
     height: 100vh;
     background-color: ${({ theme }) => theme.navColor1};
+    padding-top: 13%;
 
     .title {
         font-size: 2rem;
@@ -25,28 +27,6 @@ export const StyledContainer = styled.div`
         justify-content: center;
     }
 
-    .socialMediaBtn {
-        margin-top: 1.5rem;
-        margin-left: 0.5rem;
-        margin-right: 0.5rem;
-        width: 75px;
-        height: 40px;
-        color: ${({ theme }) => theme.primaryDark};
-        background-color: transparent;
-        border: none;
-        border-radius: 15px;
-        cursor: pointer;
-
-        &:hover {
-        background-color: ${({ theme }) => theme.primaryDark};
-        color: ${({ theme }) => theme.navColor1};
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-        
-        }
-
-    }
-
-    
 `;
 
 
@@ -56,7 +36,7 @@ export const LogoContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 10%;
+    
     
 `;
 
@@ -87,4 +67,23 @@ export const SocialIconsContainer = styled.div`
   justify-content: center;
   margin-top: auto;
   padding-bottom: 1.5rem;
+`;
+
+export const StyledSocialIcon = styled(SocialIcon)`
+  margin-top: 1.5rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  width: 75px;
+  height: 40px;
+  color: ${({ theme }) => theme.primaryDark};
+  background-color: transparent;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.primaryDark};
+    color: ${({ theme }) => theme.navColor1};
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
 `;
