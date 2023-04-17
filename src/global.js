@@ -4,6 +4,9 @@ export const GlobalStyle = createGlobalStyle`
     html, body {
         margin : 0;
         padding : 0;
+
+        @media screen and (max-width: 768px) {
+            overflow-x:hidden 
     }
     *, *::after, *::before {
         box-sizing: border-box;

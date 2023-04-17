@@ -1,5 +1,5 @@
 import React from 'react';
-import { LogoContainer, StyledContainer, StyledLogo } from "./home.styles";
+import { LogoContainer, SocialIconsContainer, StyledContainer, StyledLogo } from "./home.styles";
 import TypedComponent from '../../components/typed/typed.component';
 import SocialIcon from '../../components/social-icon/social-icon.component';
 import socialMediaLinks from '../../data/social'
@@ -18,11 +18,11 @@ const Home = ({onClick}) => {
                         <TypedComponent cursor={true} loop={true} idName='stuff' strings={["Web Designer","Web Developer","Support Manager","Jazz Musician","Lightweaver"]}/>
                     </div>
                 </div>
-                <div>
+                <SocialIconsContainer>
                     {socialMediaLinks.map((link, index) => (
                         <SocialIcon key={index} Icon={link.Icon} url={link.url} className="socialMediaBtn" />
                   ))}
-                </div>
+                </SocialIconsContainer>
             </StyledContainer>
             
         </div>

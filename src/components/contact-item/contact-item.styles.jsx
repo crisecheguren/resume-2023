@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const ItemStyles = styled.div`
     padding: 1rem;
-    background-color: #9E9DAF;
+    background-color: ${({ theme }) => theme.navColor3};
     display: flex;
     align-items: center;
     gap: 2rem;
@@ -10,8 +10,8 @@ export const ItemStyles = styled.div`
     margin-bottom: 2rem;
    
     .icon {
-        color: ${({ theme }) => theme.primaryDark};
-        background-color: ${({ theme }) => theme.secondaryDark};
+        color: ${({ theme }) => theme.secondaryyDark};
+        background-color: ${({ theme }) => theme.navColor5};
         padding: .5rem;
         align-items: center;
         justify-content: center;

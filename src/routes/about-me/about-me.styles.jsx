@@ -3,6 +3,8 @@ import styled from "styled-components";
 export const StyledWrapper = styled.div`
     background-color: ${({ theme }) => theme.navColor3};
     height: 100vh;
+    position: relative;
+    
 
 
     @media only screen and (max-width: 1170px) {
@@ -12,18 +14,23 @@ export const StyledWrapper = styled.div`
 `;
 
 export const StyledContainer = styled.div`
-    max-width: 1300px;
-    width: 100%;
-    margin: auto;
-    padding-right: 1rem;
-    padding-left: 1rem;
+  
+  max-width: 1300px;
+  width: 100%;
+  
+  margin: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
 
-    .socialWrapper {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-top: 2rem;
-    }
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media only screen and (max-width: 1170px) {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  } 
     
     
     .socialMediaBtn {
@@ -60,7 +67,7 @@ export const AboutWrapper = styled.div`
     .left {
         width: 100%;
         max-width: 650px;
-        margin-top: 3%;
+        margin-top: 2%;
         padding: 1rem;
         display: flex;
         flex-direction: column;
@@ -75,7 +82,7 @@ export const AboutWrapper = styled.div`
         max-width: 650px;
         margin-top: 3%;
         padding: 1rem;
-        background-color: #C49AA1;
+        background-color: ${({ theme }) => theme.secondaryLight};
         border-radius: 8px;
 
         p {
@@ -89,6 +96,7 @@ export const AboutWrapper = styled.div`
         gap: 0;
         justify-content: center;
         align-items: center;
+        margin-top: 0;
         img {
             width: 300px;
 
@@ -122,5 +130,20 @@ export const StyledHeader = styled.h1`
     letter-spacing: 0.5rem;
     @media only screen and (max-width: 1170px) {
         font-size: 2rem;
+    }
+`;
+
+export const SocialIconsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+
+  @media only screen and (max-width: 768px) {
+    position: relative;
     }
 `;

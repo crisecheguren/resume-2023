@@ -43,7 +43,7 @@ export const StyledMenu = styled.nav`
     transition: color 0.3s linear, transform 0.3s linear;
 
     &:hover {
-      color: ${({ theme }) => theme.primaryLight};
+      color: ${({ theme }) => theme.primaryHover};
       transform: scale(1.2);
     }
 
@@ -51,7 +51,7 @@ export const StyledMenu = styled.nav`
       content: "";
       width: 25vw;
       height: 3px;
-      background-color: ${({ theme }) => theme.primaryLight};
+      background-color: ${({ theme }) => theme.primaryHover};
       position: absolute;
       top: 47.5%;
       left: 0;

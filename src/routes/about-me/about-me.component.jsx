@@ -1,4 +1,4 @@
-import { AboutWrapper, StyledContainer, StyledHeader, StyledWrapper } from "./about-me.styles";
+import { AboutWrapper, SocialIconsContainer, StyledContainer, StyledHeader, StyledWrapper } from "./about-me.styles";
 import Image from "../../assets/PXL_20230402_154551933.jpg";
 import SocialIcon from "../../components/social-icon/social-icon.component";
 import socialMediaLinks from '../../data/social'
@@ -22,11 +22,11 @@ const AboutMe = ({onClick}) => {
                         ))}
                     </div>
                 </AboutWrapper>
-                <div className="socialWrapper">
+                <SocialIconsContainer>
                     {socialMediaLinks.map(({ Icon, url }, index) => (
                         <SocialIcon key={index} Icon={Icon} url={url} className="socialMediaBtn" />
                     ))}
-                </div>
+                </SocialIconsContainer>
             </StyledContainer>
         </StyledWrapper>
     );

@@ -3,7 +3,7 @@ import socialMediaLinks from '../../data/social'
 import ContactForm from "../../components/contact-form/contact-form.component";
 import ContactItem from "../../components/contact-item/contact-item.component";
 import SocialIcon from "../../components/social-icon/social-icon.component";
-import { ContactWrapper, StyledContainer, StyledHeader, StyledLink, StyledWrapper } from "./contact.styles";
+import { ContactWrapper, SocialIconsContainer, StyledContainer, StyledHeader, StyledLink, StyledWrapper } from "./contact.styles";
 
 const Contact = ({onClick}) => {
     return (
@@ -35,11 +35,11 @@ const Contact = ({onClick}) => {
                             <ContactForm/>
                         </div>
                     </ContactWrapper>
-                    <div className="socialWrapper">
+                    <SocialIconsContainer>
                         {socialMediaLinks.map((link, index) => (
                             <SocialIcon key={index} Icon={link.Icon} url={link.url} className="socialMediaBtn" />
                     ))}
-                    </div>
+                    </SocialIconsContainer>
             </StyledContainer>
         </StyledWrapper>
         

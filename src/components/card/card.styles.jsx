@@ -7,7 +7,7 @@ export const StyledCard = styled.div`
     flex: 0 0 calc(33.333% - 1rem);
     max-width: calc(33.333% - 1rem);
     width: 100%;
-    background: #BCA5B6;
+    background: ${({ theme }) => theme.primaryLight};
     border-radius: 0.5rem;
     padding: 1rem;
     margin-bottom: 1rem;

@@ -31,7 +31,7 @@ export const StyledGroup = styled.div`
         }
         &:focus ~ .form-text-area-label {
             ${shrinkLabel}
-            color: #C8C8D0;
+            
         }
     }
     input[type='password'] {
@@ -48,7 +48,7 @@ export const StyledGroup = styled.div`
         transition: 300ms ease all;
         &.shrink {
             ${shrinkLabel}
-            color: #C8C8D0;
+            
         }
     }
 `;

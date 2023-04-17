@@ -2,6 +2,8 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const StyledWrapper = styled.div`
+    display: flex;
+    flex-direction: column;
     background-color: ${({ theme }) => theme.navColor5};
     height: 100vh;
 
@@ -11,6 +13,9 @@ export const StyledWrapper = styled.div`
 `;
 
 export const StyledContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
     max-width: 1300px;
     width: 100%;
     margin: auto;
@@ -52,7 +57,7 @@ export const StyledHeader = styled.h1`
     font-weight: 700;
     color: ${({ theme }) => theme.primaryDark};
     margin: 0;
-    padding: 0;
+    padding-top: 1rem;
     margin-bottom: 1rem;
     text-align: center;
     text-transform: uppercase;
@@ -102,6 +107,7 @@ export const ContactWrapper = styled.div`
     @media only screen and (max-width: 768px) {
         
         flex-direction: column;
+        margin-top: 1rem;
         gap: 0;
         justify-content: center;
         align-items: center;
@@ -111,6 +117,7 @@ export const ContactWrapper = styled.div`
         }
 
         .right {
+            
             padding: 3rem 1rem 1rem 1rem;
         }
     }
@@ -120,4 +127,19 @@ export const StyledLink = styled(Link)`
     text-decoration: none;
     color: ${({ theme }) => theme.primaryDark};
     font-weight: 400;
+`;
+
+export const SocialIconsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 0;
+  right: 0;
+
+  @media only screen and (max-width: 768px) {
+    position: relative;
+    }
 `;

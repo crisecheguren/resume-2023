@@ -1,4 +1,5 @@
 import jobs from '../../data/jobs';
+import{ useTheme } from 'styled-components'
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import { StyledContainer, StyledH3, StyledHeader, StyledParagraph } from './resume.styles';
@@ -6,13 +7,14 @@ import { StyledContainer, StyledH3, StyledHeader, StyledParagraph } from './resu
 
 
 const Resume = ({ onClick }) => {
+    const theme = useTheme();
 
     return (
         <div onClick={onClick}>
             <StyledContainer>
             <StyledHeader>Resume</StyledHeader>
             <VerticalTimeline
-                lineColor='#D1C8CF'
+                lineColor={theme.secondaryLight}
             >
                 {jobs.map((job) => {
                     
@@ -21,10 +23,10 @@ const Resume = ({ onClick }) => {
                             key={job.id}
                             date={job.date}
                             dateClassName="date"
-                            contentArrowStyle={ { borderRight: '7px solid  #D1C8CF' } }
-                            iconStyle={{ background: '#D1C8CF' }}
+                            contentArrowStyle={ { borderRight: `7px solid ${theme.secondaryLight}` } }
+                            iconStyle={{ background: theme.primaryLight }}
                             icon={job.icon}
-                            contentStyle={{ background: '#D1C8CF' }}
+                            contentStyle={{ background: theme.secondaryLight }}
                         >
                         <StyledH3 className="vertical-timeline-element-title">{job.title}</StyledH3>
                         <h5 className="vertical-timeline-element-subtitle">{job.company}</h5>

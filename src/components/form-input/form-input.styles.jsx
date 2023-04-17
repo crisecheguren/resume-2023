@@ -29,7 +29,7 @@ export const StyledGroup = styled.div`
         }
         &:focus ~ .form-input-label {
             ${shrinkLabel}
-            color: #C8C8D0;
+            
         }
     }
 
@@ -44,7 +44,7 @@ export const StyledGroup = styled.div`
         transition: 300ms ease all;
         &.shrink {
             ${shrinkLabel}
-            color: #C8C8D0;
+            
         }
     }
 `;

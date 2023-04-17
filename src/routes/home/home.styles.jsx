@@ -64,11 +64,14 @@ export const StyledLogo = styled(Logo)`
   width: 40vh;
   border-radius: 10px;
   fill: ${({ theme }) => theme.primaryDark};
-  transition: fill 0.5s linear, background-color 0.5s linear;
+  transition: fill 1s linear, background 1s linear;
 
   &:hover {
     fill: ${({ theme }) => theme.navColor1};
-    background-color: ${({ theme }) => theme.primaryDark};
+    background-image: radial-gradient(
+      ${({ theme }) => theme.primaryDark} 20%,
+      ${({ theme }) => theme.primaryLight} 
+    );
   }
 
 
@@ -76,4 +79,12 @@ export const StyledLogo = styled(Logo)`
         width: 40vh;
         margin-top: 50%;
     }
+`;
+
+export const SocialIconsContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+  padding-bottom: 1.5rem;
 `;

@@ -11,7 +11,7 @@ export const StyledForm = styled.form`
         border: none;
         outline: none;
         background: ${({ theme }) => theme.primaryDark};
-        color: #C8C8D0;
+        color: ${({ theme }) => theme.primaryLight};
         border-radius: 0.5rem;
         text-transform: uppercase;
         width: 100%;
@@ -19,11 +19,12 @@ export const StyledForm = styled.form`
         margin-top: 1rem;
         transition: .3s;
         cursor: pointer;
-        border: 2px solid #C8C8D0;
+        border: 2px solid ${({ theme }) => theme.primaryLight};
     }
 
     button[type="submit"]:hover {
-        background: #C8C8D0;
+        background: transparent;
+        scale: 1.05;
         color: ${({ theme }) => theme.primaryDark};
         border: 2px solid ${({ theme }) => theme.primaryDark};
     }
