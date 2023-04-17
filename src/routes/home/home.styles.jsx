@@ -6,9 +6,13 @@ export const StyledContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
     background-color: ${({ theme }) => theme.navColor1};
     padding-top: 13%;
+
+    @media only screen and (max-width: 1170px) {
+        padding-top: 0%;
+    }
 
     .title {
         font-size: 2rem;

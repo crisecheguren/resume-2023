@@ -7,7 +7,7 @@ export const StyledWrapper = styled.div`
     background-color: ${({ theme }) => theme.navColor5};
     height: 100vh;
 
-    @media only screen and (max-width: 768px) {
+    @media only screen and (max-width: 1180px) {
         height: 100%;
     }
 `;
@@ -102,7 +102,20 @@ export const ContactWrapper = styled.div`
         padding: 1rem;
     }
     @media only screen and (max-width: 1170px) {
+        flex-direction: column;
+        margin-top: 1rem;
+        gap: 0;
+        justify-content: center;
+        align-items: center;
 
+        ::after {
+            display: none;
+        }
+
+        .right {
+            
+            padding: 3rem 1rem 1rem 1rem;
+        }
     }
     @media only screen and (max-width: 768px) {
         
@@ -139,7 +152,7 @@ export const SocialIconsContainer = styled.div`
   left: 0;
   right: 0;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1180px) {
     position: relative;
     }
 `;

@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 export const StyledWrapper = styled.div`
     background-color: ${({ theme }) => theme.navColor4};
-    height: 100vh;
+    min-height: 100vh;
     position: relative;
     
 
 
-    @media only screen and (max-width: 1170px) {
-        height: 100%;
+    @media only screen and (max-width: 1180px) {
+        
         padding-bottom: .5rem;
     }
 `;
@@ -90,7 +90,7 @@ export const AboutWrapper = styled.div`
         }
     }
 
-    @media only screen and (max-width: 1170px) {
+    @media only screen and (max-width: 1180px) {
         
         flex-direction: column;
         gap: 0;
@@ -143,7 +143,7 @@ export const SocialIconsContainer = styled.div`
   left: 0;
   right: 0;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 1180px) {
     position: relative;
     }
 `;
