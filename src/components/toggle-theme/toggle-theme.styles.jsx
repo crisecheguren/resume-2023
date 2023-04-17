@@ -3,19 +3,28 @@ import styled from "styled-components";
 export const ThemeSwitchWrapper = styled.div`
   display: flex;
   align-items: center;
-  z-index: 9;
-  position: fixed;
-  right: 25px;
-  top: 30px;
+  z-index: 8;
+  position: absolute;
+  top: 3%;
+  right: 2rem;
+
+    @media (max-width: 768px) {
+    right: 1.5rem;
+    top: 3.5%;
+    }
 `;
 
 export const ToggleText = styled.span`
-  margin-right: 10px;
   font-size: 2rem;
   position: relative;
   top: 2px;
   right: 5px;
   color: ${({ theme }) => theme.primaryDark};
+
+    @media (max-width: 768px) {
+    
+    font-size: 1.5rem;
+    }
 `;
 
 export const ThemeSwitch = styled.label`
@@ -23,6 +32,11 @@ export const ThemeSwitch = styled.label`
   height: 34px;
   position: relative;
   width: 60px;
+
+  @media (max-width: 768px) {
+    height: 28px;
+    width: 50px;
+    }
 `;
 
 export const ThemeInput = styled.input`
@@ -38,6 +52,7 @@ export const Slider = styled.div`
   right: 0;
   top: 0;
   transition: 0.4s;
+  
 
   &::before {
     background: #fff;
@@ -48,7 +63,14 @@ export const Slider = styled.div`
     position: absolute;
     transition: 0.4s;
     width: 26px;
+
+    @media (max-width: 768px) {
+        height: 22px;
+        width: 22px;
+    }
   }
+
+  
 
   ${({ isChecked, theme }) =>
     isChecked &&
@@ -57,6 +79,9 @@ export const Slider = styled.div`
 
     &::before {
       transform: translateX(26px);
+
+        @media (max-width: 768px) {
+            transform: translateX(22px);
     }
   `}
 `;

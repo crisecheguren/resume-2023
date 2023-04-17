@@ -2,12 +2,14 @@ import React from 'react';
 import { LogoContainer, SocialIconsContainer, StyledContainer, StyledLogo, StyledSocialIcon } from "./home.styles";
 import TypedComponent from '../../components/typed/typed.component';
 import socialMediaLinks from '../../data/social'
+import Toggle from '../../components/toggle-theme/toggle-theme.component';
 
-const Home = ({onClick}) => {
+const Home = ({ toggleTheme, isDarkMode }) => {
 
   return (
-        <div onClick={onClick}>
+        <div>
             <StyledContainer>
+                <Toggle onToggle={toggleTheme} isDarkMode={isDarkMode} />
                 <LogoContainer>           
                     <StyledLogo />
                 </LogoContainer>

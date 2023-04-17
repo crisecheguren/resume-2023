@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import { Outlet } from "react-router-dom";
 import Burger from "../../components/burger/burger.component";
 import Menu from "../../components/menu/menu.component";
-import Toggle from "../../components/toggle-theme/toggle-theme.component";
 
 const useOnClickOutside = (ref, handler) => {
     useEffect(() => {
@@ -23,7 +22,7 @@ const useOnClickOutside = (ref, handler) => {
   
 
 
-const Navigation = ({ toggleTheme, isDarkMode }) => {
+const Navigation = () => {
     const [open, setOpen] = useState(false);
     const node = useRef(); 
     useOnClickOutside(node, () => setOpen(false));
@@ -32,7 +31,7 @@ const Navigation = ({ toggleTheme, isDarkMode }) => {
     return (
         <div ref={node}>
             <Burger open={open} setOpen={setOpen}/>
-            <Toggle onToggle={toggleTheme} isDarkMode={isDarkMode} />
+            
             <Menu open={open} setOpen={setOpen}/>
             <Outlet />
         </div>

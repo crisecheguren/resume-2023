@@ -28,8 +28,8 @@ const App = () => {
       <>
         <GlobalStyle />
         <Routes>
-          <Route path="/" element={<Navigation toggleTheme={toggleTheme} isDarkMode={isDarkMode}/>}>
-          <Route index element={<Home onClick={handleClick} />} />
+          <Route path="/" element={<Navigation />}>
+          <Route index element={<Home onClick={handleClick} toggleTheme={toggleTheme} isDarkMode={isDarkMode} />} />
           <Route path="resume" element={<Resume onClick={handleClick} />} />
           <Route path="projects" element={<Projects onClick={handleClick} />} />
           <Route path="about" element={<AboutMe onClick={handleClick} />} />
