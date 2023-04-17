@@ -37,17 +37,18 @@ const Menu = ({ open, setOpen }) => {
               Resume
             </Link>  
           </li>
+          
           <li className="nav-item slide-out-3">
-            <Link to='/about' onClick={handleClick} className="nav-link">
-              <span role="img" aria-label="about-me">&#x1F44B;</span>
-              About
-          </Link>
-          </li>
-          <li className="nav-item slide-out-4">
             <Link to='/projects' onClick={handleClick} className="nav-link">
               <span role="img" aria-label="projects">&#x1F4BB;</span>
               Projects
             </Link>
+          </li>
+          <li className="nav-item slide-out-4">
+            <Link to='/about' onClick={handleClick} className="nav-link">
+              <span role="img" aria-label="about-me">&#x1F44B;</span>
+              About
+          </Link>
           </li>
           <li className="nav-item slide-out-5">
             <Link to='/contact' onClick={handleClick} className="nav-link">

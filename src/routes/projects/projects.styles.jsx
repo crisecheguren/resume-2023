@@ -5,7 +5,7 @@ export const StyledContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: ${({ theme }) => theme.navColor4};
+    background-color: ${({ theme }) => theme.navColor3};
 `;
 
 export const StyledProjects = styled.div`

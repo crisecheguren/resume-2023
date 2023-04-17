@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const StyledWrapper = styled.div`
-    background-color: ${({ theme }) => theme.navColor3};
+    background-color: ${({ theme }) => theme.navColor4};
     height: 100vh;
     position: relative;
     
