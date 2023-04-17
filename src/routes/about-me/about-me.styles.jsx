@@ -58,7 +58,7 @@ export const StyledContainer = styled.div`
 export const AboutWrapper = styled.div`
     display: flex;
     gap: 3rem;
-    margin-top: 7rem;
+    margin-top: 4rem;
     justify-content: space-between;
     position: relative;
     width: 100%;
