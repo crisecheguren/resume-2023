@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { GlobalStyle } from './global';
-import { theme } from './theme';
+import { lightTheme, darkTheme } from './theme';
 import { Routes, Route } from "react-router-dom";
 import Navigation from './routes/navigation/navigation.component';
 import Home from './routes/home/home.component';
@@ -12,6 +12,11 @@ import Contact from './routes/contact/contact.component';
 
 
 const App = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleTheme = () => {
+    setIsDarkMode(!isDarkMode);
+  };
 
   const handleClick = (e) => {
     e.stopPropagation();
@@ -19,11 +24,11 @@ const App = () => {
   };
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={isDarkMode ? darkTheme : lightTheme}>
       <>
         <GlobalStyle />
         <Routes>
-          <Route path="/" element={<Navigation />}>
+          <Route path="/" element={<Navigation toggleTheme={toggleTheme} isDarkMode={isDarkMode}/>}>
           <Route index element={<Home onClick={handleClick} />} />
           <Route path="resume" element={<Resume onClick={handleClick} />} />
           <Route path="projects" element={<Projects onClick={handleClick} />} />
