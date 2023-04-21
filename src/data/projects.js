@@ -7,6 +7,7 @@ import monsters from '../images/monsters.png'
 import clothing from '../images/clothing.png'
 import animatedLP from '../images/animatedLP.png'
 import animatedNav from '../images/animated-css-navigation.png'
+import musicPlayer from '../images/musicPlayer.png'
 
 const projects = [
     {
@@ -80,6 +81,14 @@ const projects = [
         projectLink: "https://crisecheguren.github.io/animated-navigation/",
         sourceLink: "https://github.com/crisecheguren/animated-navigation/",
         description: 'This is an animated navigation menu I made using CSS and Vanilla JS. I learned a lot about how to use CSS animations and how to target different elements in the DOM using JS.'
+    },
+    {
+    id: 10,
+        name: 'Music Player',
+        img: musicPlayer,
+        projectLink: "https://crisecheguren.github.io/music-player/",
+        sourceLink: "https://github.com/crisecheguren/music-player/",
+        description: 'This is a music player I made using CSS and Vanilla JS. I learned how to use the HTML audio element and how to manipulate it using JS. I also practiced my CSS skills to make it look nice and responsive.'
     },
 
 ]
