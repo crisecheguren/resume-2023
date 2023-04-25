@@ -9,6 +9,7 @@ import animatedLP from '../images/animatedLP.png'
 import animatedNav from '../images/animated-css-navigation.png'
 import musicPlayer from '../images/musicPlayer.png'
 import cooginsGPT from '../images/cooginsGPT.png'
+import countdown from '../images/countdown.png'
 
 const projects = [
     {
@@ -98,6 +99,14 @@ const projects = [
         projectLink: "https://crisecheguren.github.io/music-player/",
         sourceLink: "https://github.com/crisecheguren/music-player/",
         description: 'This is a music player I made using CSS and Vanilla JS. I learned how to use the HTML audio element and how to manipulate it using JS. I also practiced my CSS skills to make it look nice and responsive.'
+    },
+    {
+    id: 12,
+        name: 'Custom Countdown',
+        img: countdown,
+        projectLink: "https://crisecheguren.github.io/custom-countdown/",
+        sourceLink: "https://github.com/crisecheguren/custom-countdown/",
+        description: 'This is a custom countdown I made using CSS and Vanilla JS. I learned how to use the Date object in JS and how to manipulate it to get the time I wanted. I am using the localstorage to make sure the project remembers a countdown so you can come back to the page at a later date.  I also practiced my CSS skills to make it look nice and responsive.'
     },
 
 ]
