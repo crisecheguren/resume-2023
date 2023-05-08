@@ -10,6 +10,7 @@ import animatedNav from '../images/animated-css-navigation.png'
 import musicPlayer from '../images/musicPlayer.png'
 import cooginsGPT from '../images/cooginsGPT.png'
 import countdown from '../images/countdown.png'
+import bookmark from '../images/bookmark.png'
 
 const projects = [
     {
@@ -106,8 +107,18 @@ const projects = [
         img: countdown,
         projectLink: "https://crisecheguren.github.io/custom-countdown/",
         sourceLink: "https://github.com/crisecheguren/custom-countdown/",
-        description: 'This is a custom countdown I made using CSS and Vanilla JS. I learned how to use the Date object in JS and how to manipulate it to get the time I wanted. I am using the localstorage to make sure the project remembers a countdown so you can come back to the page at a later date.  I also practiced my CSS skills to make it look nice and responsive.'
+        description: 'This is a custom countdown I made using CSS and Vanilla JS. I learned how to use the Date object in JS and how to manipulate it to get the time I wanted. I am using the localstorage to make sure the project remembers a countdown so you can come back to the page at a later date.'
     },
+    {
+        id: 13,
+        name: 'Bookmark Tracker',
+        img: bookmark,
+        projectLink: "https://crisecheguren.github.io/bookmark-app/",
+        sourceLink: "https://github.com/crisecheguren/bookmark-app/",
+        description: 'This is a bookmark tracker I made using CSS and Vanilla JS. I learned how to use the localstorage to store data and how to manipulate it using JS. I also learned how to use the DOM to create elements and append them to the page.'
+    },
+
+
 
 ]
 
