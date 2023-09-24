@@ -2,7 +2,22 @@ import { ReactComponent as CtctIcon } from '../assets/constantcontactlogo.svg';
 import { ReactComponent as SharpSpringIcon } from '../assets/SharpSpring.svg';
 import { ReactComponent as DroneIcon } from '../assets/drone.svg';
 import { ReactComponent as ExtensisIcon } from '../assets/extensis.svg';
+import { ReactComponent as FeathrIcon } from '../assets/feathr.svg';
 import styled from 'styled-components';
+
+export const StyledFeathrIcon = styled(FeathrIcon)`
+    height: 145px !important;
+    width: 145px !important;
+    top: 0px !important;
+    left: 23px !important;
+
+    @media only screen and (max-width: 1170px) {
+        height: 85px !important;
+        width: 85px !important;
+        top: 7px !important;
+        left: 20px !important;
+    }
+`;
 
 export const StyledCtctIcon = styled(CtctIcon)`
     height: 55px !important;

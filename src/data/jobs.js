@@ -1,13 +1,22 @@
-import { StyledCtctIcon, StyledSSIcon, StyledDroneIcon, StyledExtensisIcon } from './jobs.styles';
+import { StyledCtctIcon, StyledSSIcon, StyledDroneIcon, StyledExtensisIcon, StyledFeathrIcon } from './jobs.styles';
 
 const jobs = [
     {
+        id: 0,
+        icon: <StyledFeathrIcon/>,
+        date: 'September 2023 - Present',
+        title: 'Product Support Engineer',
+        company: 'Feathr',
+        description: "In September of 2023, I embarked on a new journey with Feathr, stepping into a crucial technical role, where I bridge the gap between complex technical problems and clear, understandable solutions for our customers and team. In this position, my daily landscape is a balance of technical investigation, immediate problem triage, and long-term solution implementation, aligning closely with both the Support and Engineering Teams.\n\nIn this role, my key responsibilities include:\n\n- Solving Technical Problems: Proactively addressing and resolving technical issues by collaborating closely with other departments to ensure that our technical solutions meet the business interests of the company.\n- Customer Communication: Providing real-time troubleshooting support for customer escalations and composing thoughtful, personalized responses to a diverse range of requests, ensuring customer satisfaction and understanding.\n- Technical Expertise: Becoming an expert on Feathr's products and features, understanding their interaction with different parts of our backend systems, and leveraging this knowledge to uncover the root cause of complex problems.\n- Documentation and Training: Developing clear, concise technical documentation and troubleshooting playbooks as a resource to help resolve issues more effectively, and ensuring all team members are up to date with the latest product knowledge and troubleshooting techniques.\n- Cross-functional Collaboration: Working hand-in-hand with the Support and Engineering Teams to implement both immediate and long-term technical solutions, ensuring seamless interdepartmental coordination and communication.\n- Project Management: Efficiently juggling multiple projects and priorities, swiftly adapting to changing conditions, and ensuring the timely and successful delivery of solutions, even in high-pressure situations such as critical outages.\n\nIn this dynamic startup environment, my comprehensive experience in technical support and proficiency in Python and JavaScript coupled with my adept ability to communicate technical topics to non-technical customers, positions me as a pivotal asset to the Feathr team. My role not only demands technical skills and problem-solving abilities but also a genuine, deep-seated passion for meeting and exceeding customer needs, contributing significantly to the success of our customer-centric team."
+
+    },
+    {
         id: 1,
         icon: <StyledCtctIcon/>,
-        date: 'September 2021 - Present',
+        date: 'September 2021 - September 2023',
         title: 'Support Manager, Billing/Retention',
         company: 'Constant Contact',
-        description: "In September of 2021, I was integrated into the Constant Contact line of business, where I currently lead and oversee the highly effective and award-winning Billing and Retention organization within the support department, while maintaining my previous responsibilities as the Billing Manager for the SharpSpring line of business.\n\nIn this role, my key responsibilities include:\n\n- Managing a team of individual contributors to support customers using Constant Contact's products and services, setting goals for each team member, and evaluating their progress regularly.\n- Collaborating with product and development teams to identify opportunities for improvement, helping to implement these improvements, and ensuring the organization meets its goals and objectives.\n- Overseeing the Billing Support department, ensuring accurate and timely invoicing and customer support for both SharpSpring and Constant Contact businesses.\n- Representing the interests of the support department and ensuring seamless collaboration across the organization.\n- Serving as a resource for the Infosec team to help maintain and enhance SOX compliance controls, taking on the responsibility of approving finance-related changes in accordance with SOX compliance requirements.\n- Participating in planning, deploying, and managing department and company-wide initiatives and projects."
+        description: "In September of 2021, I was integrated into the Constant Contact line of business, where I led and oversaw the highly effective and award-winning Billing and Retention organization within the support department, while maintaining my previous responsibilities as the Billing Manager for the SharpSpring line of business.\n\nIn this role, my key responsibilities included:\n\n- Managing a team of individual contributors to support customers using Constant Contact's products and services, setting goals for each team member, and evaluating their progress regularly.\n- Collaborating with product and development teams to identify opportunities for improvement, helping to implement these improvements, and ensuring the organization met its goals and objectives.\n- Oversaw the Billing Support department, ensured accurate and timely invoicing and customer support for both SharpSpring and Constant Contact businesses.\n- Represented the interests of the support department and ensured seamless collaboration across the organization.\n- Served as a resource for the Infosec team to help maintain and enhance SOX compliance controls, taking on the responsibility of approving finance-related changes in accordance with SOX compliance requirements.\n- Participated in planning, deploying, and managing department and company-wide initiatives and projects."
     },
     {
         id: 2,
@@ -45,10 +54,6 @@ const jobs = [
         title: 'Project Manager',
         company: 'Altavian',
         description: "In this role, I specialized in supporting the software engineering team's organization and success by effectively managing resources, driving project progress, and leading the team towards achieving project goals. \n\nMy key responsibilities included:\n\n- Planning Project Resources: Developed feasible plans that aligned with the project's goals and objectives, as well as Altavian's overall business strategy, by defining the project scope, estimating time and financial commitment, and monitoring project progress with regular reporting.\n- Leading Project Team: Assumed a leadership role in one of Altavian's software development teams, assigning tasks and deadlines, and providing the necessary tools for effective collaboration.\n- Conducted regular team meetings to obtain progress updates, reallocating resources as needed to prevent bottlenecks and maintain a balanced workload for all team members.\n- Jira Administration: Oversaw Jira administration to optimize the team's workflow and ensure efficient project management.\n- Scrum Master: Facilitated the team's Agile Scrum process by leading daily stand-ups, weekly sprint reviews, and quarterly planning meetings, fostering a culture of continuous improvement and adaptability."
-
-
-
-
     },
     {
         id: 7,
